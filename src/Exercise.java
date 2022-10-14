@@ -5,11 +5,12 @@ import java.util.Scanner;
 public class Exercise {
     public static void main(String[] args) {
         Random Random_generate = new Random();
-        int Random_number = Random_generate.nextInt();
+        int Random_number = Random_generate.nextInt(100);
         System.out.println("Please enter your name!");
         Scanner Input = new Scanner(System.in);
         String Name = Input.nextLine();
         System.out.println("Let the game begin!");
+        System.out.println(Random_number);
 
         while (true) {
             System.out.println("Please enter a number!");
